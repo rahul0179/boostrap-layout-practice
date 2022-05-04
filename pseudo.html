@@ -18,6 +18,36 @@
             content: "gelo";
             color: red;
         }
+
+        blockquote::before {
+            content: open-quote;
+            color: brown;
+        }
+
+        blockquote::after {
+            content: close-quote;
+            color: red;
+        }
+
+        .sec-tittle {
+            display: inline-block;
+        }
+
+        .sec-tittle:hover:before {
+            content: '';
+            display: block;
+            background-color: red;
+            height: 2px;
+            width: 100%;
+        }
+
+        .sec-tittle::after {
+            content: '';
+            display: block;
+            background-color: red;
+            height: 2px;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -25,6 +55,12 @@
     <h1>
         Having fun with pseudo vai bon
     </h1>
+    <section>
+        <h2 class="sec-tittle">Best Quotes</h2>
+        <blockquote>
+            Whether you think you can or you think you can't, you're right.
+        </blockquote>
+    </section>
 
 
 
